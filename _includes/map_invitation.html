@@ -1,0 +1,18 @@
+<section id='map'>
+  <div class="container">
+    <h2 class="text-center">LOCATION</h2>
+    <h4 class="text-center">- 오시는 길 -</h4>
+    <br>
+    <h5 class="text-center">{{ page.event-date | date: "%Y년 %m월 %d일 %H시 %M분" }}</h5>
+    <h5 class="text-center">{{ page.event-place }}</h5>
+    <address class="text-center">{{ page.event-address }}
+      <a href="tel: {{ page.contact }}">문의 : {{ page.contact }}</a></address>
+
+  {% if page.event-address-url %}
+    <iframe src= "{{ page.event-address-url }}"></iframe>
+  {% else %}
+    <iframe src= "{{ 404 | prepend: site.baseurl }}"></iframe>
+  {% endif %}
+  </div>
+
+</section>

@@ -1,0 +1,38 @@
+<section id='main_header'>
+  <div class="container">
+    <h1 class="invitation-title">{{ page.title }}</h1>
+    {% if page.slide-img %}
+    <div id="demo" class="carousel slide" data-ride="carousel">
+
+      <!-- Indicators -->
+      <ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        <li data-target="#demo" data-slide-to="2"></li>
+      </ul>
+
+    <!-- The slideshow -->
+    <div class="carousel-inner">
+      {% assign slideactive = "yes" %}
+      {% for slide in page.slide-img %}
+        {% if slideactive == "yes" %}
+          <div class="carousel-item active">
+        {% else %}
+          <div class="carousel-item">
+        {% endif %}
+        <img src='{{ slide | prepend: "img/" }}' alt="Los Angeles" width="100%">
+      </div>
+      {% assign slideactive = "no" %}
+      {% endfor %}
+    </div>
+
+      <!-- Left and right controls -->
+      <a class="carousel-control-prev" href="#demo" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#demo" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+    {% endif %}
+</section>

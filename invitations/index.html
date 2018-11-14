@@ -1,0 +1,18 @@
+---
+layout: default
+title: invitation_list
+permalink: /invitation_list/
+---
+
+
+
+<div class="catalogue">
+{% assign sorted = site.pages | sort: 'order' %}
+{% for page in sorted %}
+{% if page.invitations == true %}
+
+     {% include invitation_list.html %}
+
+{% endif %}
+{% endfor %}
+</div>
