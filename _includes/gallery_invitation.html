@@ -1,0 +1,83 @@
+<section id="gallery">
+  <div class="container">
+    <div class="gallery-row">
+      <div class="gallery-column">
+        {% for i in (0..page.slide-img.size) limit: page.slide-img-limit %}
+        <img src="img/{{ page.slide-img[i] }}" onclick="openModal();currentSlide({{ i | plus: 1 }})" class="hover-shadow cursor" style="width:100%">
+        {% endfor %}
+
+      </div>
+    </div>
+    {% if page.slide-img.size > page.slide-img-limit %}
+      <div class="d-flex justify-content-center">
+        <button class="text-center btn btn-danger" onclick="openModal();currentSlide(1)">더보기</button>
+      </div>
+
+    {% endif %}
+  </div>
+</section>
+
+
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+    {% assign slide-length = page.slide-img.size %}
+    {% for i in (0..slide-length) %}
+      {% if i == slide-length %}
+        {% break %}
+      {% endif %}
+    <div class="mySlides">
+      <div class="numbertext">{{ i | plus: 1 }} / {{ slide-length }}</div>
+      <img src="img/{{ page.slide-img[i] }}" style="width:100%">
+    </div>
+    {% endfor %}
+
+    <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+    <button class="next" onclick="plusSlides(1)">&#10095;</button>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+  </div>
+</div>
+
+<script>
+function openModal() {
+  document.getElementById('myModal').style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById('myModal').style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
