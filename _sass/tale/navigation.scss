@@ -10,3 +10,10 @@
   width: 100%;
   max-width: 800px;
 }
+
+@media screen and (min-width: 800px){
+  .nav-container > .navbar{
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
