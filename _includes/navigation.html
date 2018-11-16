@@ -1,19 +1,24 @@
-<nav class="navbar navbar-expand-md bg-secondary navbar-dark sticky-top">
-  <a class="navbar-brand" href="{{ site.baseurl }}/">{{ site.title }}</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="collapsibleNavbar">
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link" href="{{ '/about' | prepend: site.baseurl }}">About</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="{{ site.baseurl }}/">포스트</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="{{ '/invitation_list' | prepend: site.baseurl }}">초대장</a>
-      </li>
-    </ul>
+<div id = "nav-outer" class="bg-secondary navbar-dark">
+  <div class="nav-container">
+    <nav class="navbar navbar-expand-md bg-secondary navbar-dark sticky-top">
+        <div class="justify-content-start"><a class="navbar-brand" href="{{ site.baseurl }}/">{{ site.title }}</a></div>
+
+        <div class="justify-content-end"><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button></div>
+        <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="{{ '/about' | prepend: site.baseurl }}">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ site.baseurl }}/">포스트</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ '/invitation_list' | prepend: site.baseurl }}">초대장</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
   </div>
-</nav>
+</div>
