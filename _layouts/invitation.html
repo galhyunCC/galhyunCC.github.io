@@ -5,6 +5,10 @@ layout: default_invitation
     {% include info_invitation.html %}
   {% endif %}
 
+  {% if page.is_dday %}
+    {% include dday_invitation.html %}
+  {% endif %}
+  
   {% if page.is_main_header %}
     {% include main_header_invitation.html %}
   {% endif %}
@@ -12,6 +16,9 @@ layout: default_invitation
   {% if page.is_intro %}
     {% include intro_invitation.html %}
   {% endif %}
+
+
+
 
   {% if page.is_main %}
     {% include main_invitation.html %}

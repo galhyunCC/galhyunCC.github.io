@@ -21,6 +21,7 @@ is_gallery: true #갤러리 카드 여부
 is_intro: true #인트로 카드 여부
 is_main: true #메인 카드 여부
 is_map: true #맵 카등 여부
+is_dday: true #디데이 카운트 여부
 ---
 홍보 주요 내용 입력
 
