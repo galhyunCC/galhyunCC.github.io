@@ -33,23 +33,33 @@
     </div>
     {% endfor %}
 
-    <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
-    <button class="next" onclick="plusSlides(1)">&#10095;</button>
+    <div class="prev" onclick="plusSlides(-1)">&#10094;</div>
+    <div class="next" onclick="plusSlides(1)">&#10095;</div>
 
-    <div class="caption-container">
+    <!-- <div class="caption-container">
       <p id="caption"></p>
-    </div>
+    </div> -->
 
   </div>
 </div>
 
 <script>
+  // Get the modal
+var modal = document.getElementById('myModal');
+
 function openModal() {
   document.getElementById('myModal').style.display = "block";
 }
 
 function closeModal() {
   document.getElementById('myModal').style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
 }
 
 var slideIndex = 1;
