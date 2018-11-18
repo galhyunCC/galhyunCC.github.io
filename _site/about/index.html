@@ -157,7 +157,7 @@
 </table>
 
 <p><br /></p>
-<h4 id="-신청-및-문의--갈현동행정복지센터-맞춤형복지팀02-2150-3231">▶ 신청 및 문의 : 갈현동행정복지센터 맞춤형복지팀<br />(02-2150-3231)</h4>
+<h4 id="-신청-및-문의--갈현동-행정복지센터-맞춤형복지팀02-2150-3231">▶ 신청 및 문의 : 갈현동 행정복지센터 맞춤형복지팀<br />(02-2150-3231)</h4>
 
 <hr />
 
@@ -248,19 +248,19 @@ function currentSlide(n) {
 function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
+  // var dots = document.getElementsByClassName("demo");
   var captionText = document.getElementById("caption");
   if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";
   }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
+  // for (i = 0; i < dots.length; i++) {
+  //     dots[i].className = dots[i].className.replace(" active", "");
+  // }
   slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
+  // dots[slideIndex-1].className += " active";
+  // captionText.innerHTML = dots[slideIndex-1].alt;
 }
 </script>
 
@@ -279,7 +279,7 @@ function showSlides(n) {
 
     <footer>
   <span>
-    &copy; <time datetime="2018-11-18 22:09:17 +0900">2018</time> . 
+    &copy; <time datetime="2018-11-18 23:00:09 +0900">2018</time> . 
   </span>
 </footer>
 
