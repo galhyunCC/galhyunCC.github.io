@@ -12,6 +12,11 @@
   overflow: hidden;
   background: #fff;
   border-radius: 3px;
+  word-break: keep-all;
+}
+
+.container li{
+  text-align: left;
 }
 
 table {
