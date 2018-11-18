@@ -10,7 +10,7 @@ event-date: 2018-11-07 11:30:00
 event-place: "과천타워 문원한우마을"
 event-address: "경기도 과천시 별양동 1-17 <br>과천타워 지하1층"
 contact: "02-1588-1588"
-slide-img: ["나눔가게홍보사진1.png","나눔가게홍보사진2.png"]
+slide-img: ["nanumad1.png","nanumad2.png"]
 slide-img-limit: 2
 
 is_info : true #인포 카드 여부
