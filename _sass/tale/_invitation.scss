@@ -58,7 +58,13 @@ table td {
   padding-right: 15px;
   /* position: relative; */
 }
+
+#intro *{
+  font-family: 'Do Hyeon', sans-serif;
+}
+
 #intro h2{
+
   font-size: 1em;
   line-height: 1.4em;
   margin-bottom: 0px;
@@ -98,6 +104,11 @@ table td {
   padding-left: 15px;
   padding-right: 15px;
 }
+
+#main *{
+  font-family: 'Noto Serif KR', sans-serif;
+}
+
 #main h2{
   margin-top: 30px;
   margin-bottom: 30px;
