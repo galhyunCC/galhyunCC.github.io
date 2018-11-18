@@ -1,0 +1,41 @@
+---
+layout: default_about
+---
+  {% if page.is_info %}
+    {% include info_invitation.html %}
+  {% endif %}
+
+  {% if page.is_dday %}
+    {% include dday_invitation.html %}
+  {% endif %}
+
+  {% if page.is_main_header %}
+    {% include main_header_invitation.html %}
+  {% endif %}
+
+  {% if page.is_intro %}
+    {% include intro_invitation.html %}
+  {% endif %}
+
+  {% if page.is_main %}
+    {% include main_invitation.html %}
+  {% endif %}
+
+  {% if page.is_gallery %}
+    {% include gallery_invitation.html %}
+  {% endif %}
+
+  {% if page.is_map %}
+    {% include map_invitation.html %}
+  {% endif %}
+
+<!-- <div class="pagination">
+  {% if page.next.url %}
+    <a href="{{ page.next.url | prepend: site.baseurl }}" class="left arrow">&#8592;</a>
+  {% endif %}
+  {% if page.previous.url %}
+    <a href="{{ page.previous.url | prepend: site.baseurl }}" class="right arrow">&#8594;</a>
+  {% endif %}
+
+  <a href="#" class="top center-block">Top</a>
+</div> -->

@@ -1,7 +1,6 @@
 ---
-layout: invitation
+layout: about
 category : about
-permalink: /about/
 title:  "우리동네 나눔가게가 되어주세요" #홍보 제목 입력
 date:   2018-11-17 14:00:00 +0900
 head_info: "이웃사랑 나눔의 첫 걸음"
