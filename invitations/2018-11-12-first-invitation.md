@@ -6,7 +6,7 @@ head_info: "나눔가게 기부릴레이"
 invitations: true
 categories: jekyll update
 author: 관리자
-event-date: 2018-11-07 11:30:00
+event-date: Nov 29, 2018 11:30:00 +0900
 event-place: "과천타워 문원한우마을"
 event-address: "경기도 과천시 별양동 1-17 <br>과천타워 지하1층"
 contact: "02-1588-1588"

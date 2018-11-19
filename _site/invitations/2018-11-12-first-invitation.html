@@ -4,6 +4,8 @@
   <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
 
   <!-- Begin Jekyll SEO tag v2.5.0 -->
 <title>나눔가게 8호점 | 갈현동 나눔가게 기부릴레이</title>
@@ -19,7 +21,7 @@
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2018-11-12T13:24:12+09:00" />
 <script type="application/ld+json">
-{"url":"http://localhost:4000/invitations/2018-11-12-first-invitation","headline":"나눔가게 8호점","dateModified":"2018-11-12T13:24:12+09:00","datePublished":"2018-11-12T13:24:12+09:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/invitations/2018-11-12-first-invitation"},"author":{"@type":"Person","name":"관리자"},"description":"Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.","@type":"BlogPosting","@context":"http://schema.org"}</script>
+{"description":"Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.","author":{"@type":"Person","name":"관리자"},"@type":"BlogPosting","url":"http://localhost:4000/invitations/2018-11-12-first-invitation","headline":"나눔가게 8호점","dateModified":"2018-11-12T13:24:12+09:00","datePublished":"2018-11-12T13:24:12+09:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/invitations/2018-11-12-first-invitation"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -112,9 +114,9 @@
 
 
 
-<script>
+<!-- <script>
 // Set the date we're counting down to
-var countDownDate = new Date("2018-11-07 11:30:00 +0000").getTime();
+var countDownDate = new Date("Nov 29, 2018 11:30:00 +0900").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -141,7 +143,7 @@ var x = setInterval(function() {
         document.getElementById("invitation-dday").style.display = "none";
     }
 }, 1000);
-</script>
+</script> -->
 
   
 
@@ -151,7 +153,7 @@ var x = setInterval(function() {
     <section id='intro'>
   <div class="container">
     <h1 class="text-center">나눔가게 8호점</h1>
-    <h2 class="text-center">2018년 11월 07일 11시 30분</h2>
+    <h2 class="text-center">2018년 11월 29일 11시 30분</h2>
     <br>
     <h2 class="text-center">과천타워 문원한우마을</h2>
     <br>
@@ -355,7 +357,7 @@ function showSlides(n) {
     <h2 class="text-center">LOCATION</h2>
     <h4 class="text-center">- 오시는 길 -</h4>
     <br>
-    <h5 class="text-center">2018년 11월 07일 11시 30분</h5>
+    <h5 class="text-center">2018년 11월 29일 11시 30분</h5>
     <h5 class="text-center">과천타워 문원한우마을</h5>
     <address class="text-center">경기도 과천시 별양동 1-17 <br>과천타워 지하1층
       <a href="tel: 02-1588-1588">문의 : 02-1588-1588</a></address>
@@ -420,6 +422,37 @@ var mapTypeControl = new daum.maps.MapTypeControl();
 
   
 
+
+  <script>
+  // Set the date we're counting down to
+
+  var countDownDate = new Date("Nov 29, 2018 11:30:00 +0900").getTime();
+
+  // Update the count down every 1 second
+  var x = setInterval(function() {
+
+      // Get todays date and time
+      var now = new Date().getTime();
+
+      // Find the distance between now and the count down date
+      var distance = countDownDate - now;
+      if (distance < 0){
+        document.getElementById("invitation-dday").style.display = "none";
+        clearInterval(x);
+
+      }else{
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        document.getElementById("dday-count").innerHTML = "행사까지 " + days + "일 " + hours + "시간 남았습니다.";
+      }
+
+
+  }, 1000);
+  </script>
+
 <!-- <div class="pagination">
   
   
@@ -431,7 +464,7 @@ var mapTypeControl = new daum.maps.MapTypeControl();
 
     <footer>
   <span>
-    &copy; <time datetime="2018-11-19 14:44:39 +0900">2018</time> . 
+    &copy; <time datetime="2018-11-19 22:55:13 +0900">2018</time> . 
   </span>
 </footer>
 
