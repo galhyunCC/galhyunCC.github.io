@@ -3,7 +3,7 @@ layout: invitation
 title:  "나눔가게 8호점" #홍보 제목 입력
 date:   2018-11-12 13:24:12 +0900
 head_info: "나눔가게 기부릴레이"
-invitations: true
+invitations: false
 categories: jekyll update
 author: 관리자
 event-date: Nov 07, 2018 11:30:00 +0900
