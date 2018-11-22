@@ -1,5 +1,7 @@
 <section id="gallery">
-  <div class="container">
+  <div class="container text-center">
+    <h1>GALLERY</h1>
+    <hr/>
     <div class="gallery-row">
       <div class="gallery-column">
         {% for i in (0..page.slide-img.size) limit: page.slide-img-limit %}
@@ -10,7 +12,7 @@
     </div>
     {% if page.slide-img.size > page.slide-img-limit %}
       <div class="d-flex justify-content-center">
-        <button class="text-center btn btn-danger" onclick="openModal();currentSlide(1)">더보기</button>
+        <button class="text-center btn btn-gallery" onclick="openModal();currentSlide(1)">더보기</button>
       </div>
 
     {% endif %}
