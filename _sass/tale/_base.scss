@@ -12,7 +12,7 @@ body {
 
 html {
   font-family: 'Nanum Gothic', sans-serif;
-  font-size: 14px;
+  font-size: 18px;
   overflow-y: scroll;
 
   @media (min-width: 600px) {
@@ -70,7 +70,7 @@ a:link {
 }
 
 /* Paste this css to your style sheet file or under head tag */
-/* This only works with JavaScript, 
+/* This only works with JavaScript,
 if it's not present, don't show loader */
 
 .no-js #loader { display: none;  }
