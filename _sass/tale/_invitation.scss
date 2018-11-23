@@ -72,11 +72,19 @@ table td {
   font-family: 'Do Hyeon', sans-serif;
 }
 
+#intro br{
+  line-height: 0 !important;
+}
+
+#intro p{
+  margin-top:0;
+  margin-bottom:0;
+}
+
 #intro h2{
 
   font-size: 1em;
-  line-height: 1.4em;
-  margin-bottom: 0px;
+  margin-bottom: 0px !important;
 }
 #intro > .main_photo{
   position: relative;

@@ -1,3 +1,10 @@
+@font-face{font-family: 'gabia-solmee'; src:url('fonts/gabia_solmee.ttf')}
+@font-face{font-family: 'gabia-solmee'; src:url('fonts/gabia_solmee.otf')}
+@font-face{font-family: 'mi-saeng'; src:url('fonts/SDMiSaeng.ttf')}
+
+
+
+
 .main-bg-9ho {
   background-color: rgba(128, 179, 255, 0.2);
   border-radius: 5px;
@@ -27,4 +34,14 @@
   max-width: 425px;
   margin: auto;
   background-color: rgba(255, 92, 51, 0.3 );
+}
+
+.gabia-solmee{
+  font-family: gabia-solmee, serif !important;
+  font-weight: 800;
+}
+
+.mi-saeng{
+  font-family: mi-saeng, serif !important;
+  font-weight: 800;
 }
