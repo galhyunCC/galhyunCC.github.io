@@ -19,6 +19,10 @@
   text-align: left;
 }
 
+figure {
+  margin: 0 !important;
+}
+
 table {
   margin: auto;
   // border: 1px solid black;
@@ -150,8 +154,8 @@ table td {
   padding-right: 15px;
 }
 #map address{
-  font-style: normal;
-  margin: 2em 0;
+  // font-style: normal;
+  margin: 1em 0;
   font-size: 16px;
   line-height: 1.6em;
 }
@@ -183,12 +187,13 @@ table td {
   margin-bottom: 5px;
 }
 #map .msg{
-  background: #333;
+  background-color: rgba(208, 208, 225, 0.2);
   border-radius: 5px;
-  padding: 10px;
+  padding-bottom: 5px;
+  padding-top: 5px;
   text-align: center;
   color: #ccc;
-  margin: 50px 0 20px 0;
+  margin: 0px 0 20px 0;
 }
 #map iframe{
   display: block;
