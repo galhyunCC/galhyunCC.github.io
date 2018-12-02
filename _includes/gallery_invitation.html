@@ -9,7 +9,7 @@
         <div class="gallery-column">
 
           {% for i in (0..std) %}
-          <img src="img/{{ page.slide-img[i] }}" onclick="openModal();currentSlide({{ i | plus: 1 }})" class="hover-shadow cursor" style="width:100%">
+          <img src="{{ page.slide-img[i] }}" onclick="openModal();currentSlide({{ i | plus: 1 }})" class="hover-shadow cursor" style="width:100%">
           {% endfor %}
         </div>
         {% assign std2 = std | plus: 1 %}
@@ -17,7 +17,7 @@
         <div class="gallery-column">
 
           {% for i in (std2..std3) %}
-          <img src="img/{{ page.slide-img[i] }}" onclick="openModal();currentSlide({{ i | plus: 1 }})" class="hover-shadow cursor" style="width:100%">
+          <img src="{{ page.slide-img[i] }}" onclick="openModal();currentSlide({{ i | plus: 1 }})" class="hover-shadow cursor" style="width:100%">
           {% endfor %}
         </div>
     </div>
@@ -45,7 +45,7 @@
       {% endif %}
     <div class="mySlides">
       <div class="numbertext">{{ i | plus: 1 }} / {{ slide-length }}</div>
-      <img src="img/{{ page.slide-img[i] }}" style="width:100%">
+      <img src="{{ page.slide-img[i] }}" style="width:100%">
     </div>
     {% endfor %}
 
