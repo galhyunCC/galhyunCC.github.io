@@ -1,0 +1,47 @@
+@font-face{font-family: 'gabia-solmee'; src:url('fonts/gabia_solmee.ttf')}
+@font-face{font-family: 'gabia-solmee'; src:url('fonts/gabia_solmee.otf')}
+@font-face{font-family: 'mi-saeng'; src:url('fonts/SDMiSaeng.ttf')}
+
+
+
+
+.main-bg-11ho {
+  background-color: rgba(255, 0, 0, 0.07);
+  border-radius: 5px;
+}
+
+.intro-bg1-11ho {
+  display: block;
+  width: 100%;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 3px;
+  border-radius: 30px;
+  max-width: 425px;
+  margin: auto;
+  margin-bottom: 10px;
+  background-color: rgba(255, 0, 0, 0.05 );
+}
+
+.intro-bg2-11ho {
+  display: block;
+  width: 100%;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  border-radius: 10px;
+  max-width: 425px;
+  margin: auto;
+  background-color: rgba(255, 0, 0, 0.05 );
+}
+
+.gabia-solmee{
+  font-family: gabia-solmee, serif !important;
+  font-weight: 800;
+}
+
+.mi-saeng{
+  font-family: mi-saeng, serif !important;
+  font-weight: 800;
+}
