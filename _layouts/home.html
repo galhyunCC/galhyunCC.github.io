@@ -2,7 +2,7 @@
 layout: default
 title: post_list
 ---
-<div class="catalogue">
+<div class="catalogue text-center">
   {% for post in site.posts reversed %}
     <a href="{{ post.url | prepend: site.baseurl }}" class="catalogue-item">
       <div>

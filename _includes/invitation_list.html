@@ -10,9 +10,9 @@
             </span>
             {% endif %}
             {% if page.category != "about" and page.category != "post" %}
-            <h1 class="catalogue-title">
+            <h3 class="catalogue-title">
                 {{ page.title }}
-            </h1>
+            </h3>
             <h3><span>on&nbsp;</span><time datetime="{{ page.date }}">{{ page.date | date: "%B %d, %Y" }}</time></h3>
 
             <!-- <p class="catalogue-body">
@@ -21,4 +21,6 @@
             {% endif %}
         </div>
     </a>
+
 </li>
+<br>

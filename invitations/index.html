@@ -6,7 +6,7 @@ permalink: /invitation_list/
 
 
 
-<div class="catalogue">
+<div class="catalogue text-center">
 {% assign sorted = site.pages | sort: 'order' %}
 {% for page in sorted reversed %}
 {% if page.invitations == true %}
