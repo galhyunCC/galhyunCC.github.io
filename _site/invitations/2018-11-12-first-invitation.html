@@ -254,42 +254,46 @@ var x = setInterval(function() {
     <hr/>
 
 
-    <div class="gallery-row">
-        
-        <div class="gallery-column">
-
-          
-          <img src="20181107_113336.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow cursor" style="width:100%">
-          
-          <img src="20181107_113424.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow cursor" style="width:100%">
-          
-          <img src="20181107_113936.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow cursor" style="width:100%">
-          
-          <img src="nanum8ho.png" onclick="openModal();currentSlide(4)" class="hover-shadow cursor" style="width:100%">
-          
-        </div>
-        
-        
-        <div class="gallery-column">
-
-          
-          <img src="nanum8hoad.png" onclick="openModal();currentSlide(5)" class="hover-shadow cursor" style="width:100%">
-          
-          <img src="nanumad1.png" onclick="openModal();currentSlide(6)" class="hover-shadow cursor" style="width:100%">
-          
-          <img src="nanumad2.png" onclick="openModal();currentSlide(7)" class="hover-shadow cursor" style="width:100%">
-          
-        </div>
-    </div>
-
-
-    <hr/>
-    
-      <div class="d-flex justify-content-center">
+    <div class="d-flex justify-content-center">
         <button class="text-center btn btn-gallery" onclick="openModal();currentSlide(1)">크게보기</button>
-      </div>
+    </div>
+    <hr/>
+        
+        
+        
+        <div class="mySlides">
+          <img src="20181107_113336.jpg">
+        </div>
+        
+        <div class="mySlides">
+          <img src="20181107_113424.jpg">
+        </div>
+        
+        <div class="mySlides">
+          <img src="20181107_113936.jpg">
+        </div>
+        
+        <div class="mySlides">
+          <img src="nanum8ho.png">
+        </div>
+        
+        <div class="mySlides">
+          <img src="nanum8hoad.png">
+        </div>
+        
+        <div class="mySlides">
+          <img src="nanumad1.png">
+        </div>
+        
+        <div class="mySlides">
+          <img src="nanumad2.png">
+        </div>
+        
+
+
 
     
+      
   </div>
 </section>
 
@@ -301,43 +305,43 @@ var x = setInterval(function() {
     
     
       
-    <div class="mySlides">
+    <div class="mySlides-modal">
       <div class="numbertext">1 / 7</div>
       <img src="20181107_113336.jpg" style="width:100%">
     </div>
     
       
-    <div class="mySlides">
+    <div class="mySlides-modal">
       <div class="numbertext">2 / 7</div>
       <img src="20181107_113424.jpg" style="width:100%">
     </div>
     
       
-    <div class="mySlides">
+    <div class="mySlides-modal">
       <div class="numbertext">3 / 7</div>
       <img src="20181107_113936.jpg" style="width:100%">
     </div>
     
       
-    <div class="mySlides">
+    <div class="mySlides-modal">
       <div class="numbertext">4 / 7</div>
       <img src="nanum8ho.png" style="width:100%">
     </div>
     
       
-    <div class="mySlides">
+    <div class="mySlides-modal">
       <div class="numbertext">5 / 7</div>
       <img src="nanum8hoad.png" style="width:100%">
     </div>
     
       
-    <div class="mySlides">
+    <div class="mySlides-modal">
       <div class="numbertext">6 / 7</div>
       <img src="nanumad1.png" style="width:100%">
     </div>
     
       
-    <div class="mySlides">
+    <div class="mySlides-modal">
       <div class="numbertext">7 / 7</div>
       <img src="nanumad2.png" style="width:100%">
     </div>
@@ -387,7 +391,7 @@ function currentSlide(n) {
 
 function showSlides(n) {
   var i;
-  var slides = document.getElementsByClassName("mySlides");
+  var slides = document.getElementsByClassName("mySlides-modal");
   // var dots = document.getElementsByClassName("demo");
   var captionText = document.getElementById("caption");
   if (n > slides.length) {slideIndex = 1}
@@ -401,6 +405,22 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   // dots[slideIndex-1].className += " active";
   // captionText.innerHTML = dots[slideIndex-1].alt;
+}
+
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
 }
 </script>
 
@@ -497,7 +517,7 @@ function showSlides(n) {
 
     <footer>
   <span>
-    &copy; <time datetime="2019-04-08 10:16:42 +0900">2019</time> | galhyunCC | Tel: 02)2150-3200
+    &copy; <time datetime="2019-04-16 11:29:51 +0900">2019</time> | galhyunCC | Tel: 02)2150-3200
   </span>
 </footer>
 

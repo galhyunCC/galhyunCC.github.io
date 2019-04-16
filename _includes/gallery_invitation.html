@@ -4,32 +4,22 @@
     <hr/>
 
 
-    <div class="gallery-row">
-        {% assign std = page.slide-img.size | divided_by: 2 %}
-        <div class="gallery-column">
-
-          {% for i in (0..std) %}
-          <img src="{{ page.slide-img[i] }}" onclick="openModal();currentSlide({{ i | plus: 1 }})" class="hover-shadow cursor" style="width:100%">
-          {% endfor %}
-        </div>
-        {% assign std2 = std | plus: 1 %}
-        {% assign std3 = page.slide-img.size | minus: 1 %}
-        <div class="gallery-column">
-
-          {% for i in (std2..std3) %}
-          <img src="{{ page.slide-img[i] }}" onclick="openModal();currentSlide({{ i | plus: 1 }})" class="hover-shadow cursor" style="width:100%">
-          {% endfor %}
-        </div>
-    </div>
-
-
-    <hr/>
-    {% if page.slide-img.size > page.slide-img-limit %}
-      <div class="d-flex justify-content-center">
+    <div class="d-flex justify-content-center">
         <button class="text-center btn btn-gallery" onclick="openModal();currentSlide(1)">크게보기</button>
-      </div>
+    </div>
+    <hr/>
+        {% assign std = page.slide-img.size %}
+        {% assign sizes = std | minus: 1 %}
+        {% for i in (0..sizes) %}
+        <div class="mySlides">
+          <img src="{{ page.slide-img[i] }}">
+        </div>
+        {% endfor %}
 
-    {% endif %}
+
+
+    
+      
   </div>
 </section>
 
@@ -43,7 +33,7 @@
       {% if i == slide-length %}
         {% break %}
       {% endif %}
-    <div class="mySlides">
+    <div class="mySlides-modal">
       <div class="numbertext">{{ i | plus: 1 }} / {{ slide-length }}</div>
       <img src="{{ page.slide-img[i] }}" style="width:100%">
     </div>
@@ -91,7 +81,7 @@ function currentSlide(n) {
 
 function showSlides(n) {
   var i;
-  var slides = document.getElementsByClassName("mySlides");
+  var slides = document.getElementsByClassName("mySlides-modal");
   // var dots = document.getElementsByClassName("demo");
   var captionText = document.getElementById("caption");
   if (n > slides.length) {slideIndex = 1}
@@ -105,5 +95,21 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   // dots[slideIndex-1].className += " active";
   // captionText.innerHTML = dots[slideIndex-1].alt;
+}
+
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
 }
 </script>
