@@ -23,8 +23,8 @@
 
                    {% assign ter = conv[-1] | prepend: 't_' %}
                    {% assign result = ter | prepend: 'img/' %}
-                  <a href = "{{ page.slide-img[i] }}"   data-ngThumb = "{{ page.slide-img[i] }}" >  </a>
-                  <!-- <a href = "{{ page.slide-img[i] }}"   data-ngThumb = "{{ result }}" >  </a> -->
+                  <!-- <a href = "{{ page.slide-img[i] }}"   data-ngThumb = "{{ page.slide-img[i] }}" >  </a> -->
+                  <a href = "{{ page.slide-img[i] }}"   data-ngThumb = "{{ result }}" >  </a>
 
 
                    {% endfor %}
