@@ -1,0 +1,65 @@
+@font-face{font-family: 'gabia-solmee'; src:url('fonts/gabia_solmee.ttf')}
+@font-face{font-family: 'gabia-solmee'; src:url('fonts/gabia_solmee.otf')}
+@font-face{font-family: 'mi-saeng'; src:url('fonts/SDMiSaeng.ttf')}
+@font-face{font-family: 'JalnanOTF'; src:url('fonts/JalnanOTF.otf')}
+
+
+
+.background-img {
+  max-width: 800px;
+  margin: 0 auto;
+  background: url(/assets/olga.jpg)
+
+
+}
+
+#map .map-background-12ho{
+  background-color: rgba(255,255,0,0.3);
+}
+
+.main-bg-12ho {
+  background-color: rgba(255,255,0,0.3);
+  border-radius: 5px;
+}
+
+.intro-bg1-12ho {
+  display: block;
+  width: 100%;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px; 
+  border-radius: 20px;
+  max-width: 425px;
+  margin: auto;
+  margin-bottom: 10px;
+  background-color: rgba(255,255,0,0.3 );
+}
+
+.intro-bg2-12ho {
+  display: block;
+  width: 100%;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  border-radius: 10px;
+  max-width: 425px;
+  margin: auto;
+  background-color: rgba(255,255,0,0.3 );
+}
+
+.gabia-solmee{
+  font-family: gabia-solmee, serif !important;
+  font-weight: 800;
+}
+
+.mi-saeng{
+  font-family: mi-saeng, serif !important;
+  font-weight: 800;
+}
+
+.JalnanOTF{
+  font-family: JalnanOTF, serif !important;
+  font-weight: 800;
+}
